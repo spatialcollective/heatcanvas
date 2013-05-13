@@ -34,7 +34,7 @@ var HeatCanvas = function(canvas){
         return null;
     }
     
-    this.worker = new Worker(HeatCanvas.getPath()+'heatcanvas-worker.js');
+    this.worker = new Worker('/static/javascript/tools/heatcanvas/heatcanvas-worker.js');
     
     this.width = this.canvas.width;
     this.height = this.canvas.height;
